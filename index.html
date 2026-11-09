@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huroofi Privacy &amp; Support</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one narrow reading column; Arabic first (RTL), English mirror (LTR); support card on top. */
+:root {
+  --bg: #F3F7FF;
+  --surface: #FFFFFF;
+  --ink: #16224A;
+  --muted: #4A5785;
+  --line: #DCE4F7;
+  --blue: #3B6CF6;
+  --sun: #FFC21A;
+  --sun-ink: #16224A;
+  --display: -apple-system, system-ui, "Segoe UI", sans-serif;
+  --body: -apple-system, system-ui, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1530; --surface: #17204A; --ink: #EEF2FF; --muted: #AEB9E0;
+    --line: #2A3566; --blue: #8FADFF; --sun: #FFC21A; --sun-ink: #16224A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1530; --surface: #17204A; --ink: #EEF2FF; --muted: #AEB9E0;
+  --line: #2A3566; --blue: #8FADFF; --sun: #FFC21A; --sun-ink: #16224A; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font: 17px/1.75 var(--body); }
+.page {
+  max-width: 680px; margin: 0 auto; padding-block: 32px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 40px;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.mark {
+  width: 48px; height: 48px; border-radius: 14px; background: var(--sun); color: var(--sun-ink);
+  display: grid; place-items: center; font: 800 28px/1 var(--display);
+}
+.brand b { font: 800 30px/1 var(--display); }
+.brand small { display: block; color: var(--muted); font-size: 14px; }
+h1, h2 { font-family: var(--display); line-height: 1.25; text-wrap: balance; margin: 0; }
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+p { margin: 0; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+  padding: 20px; display: grid; gap: 10px;
+}
+.mail { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.mail code {
+  font: 600 16px/1.4 var(--body); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; padding: 6px 12px; user-select: all; direction: ltr; overflow-wrap: anywhere;
+}
+button {
+  font: 600 15px/1 var(--body); color: #fff; background: var(--blue); border: 0; border-radius: 10px;
+  padding: 10px 14px; cursor: pointer;
+}
+button:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+section { display: grid; gap: 14px; }
+ul { margin: 0; padding-inline-start: 22px; display: grid; gap: 6px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 0; }
+.en { font-size: 16px; }
+.muted { color: var(--muted); font-size: 14px; }
+</style>
+
+</head>
+<body>
+<main class="page">
+  <header class="brand" dir="rtl" lang="ar">
+    <span class="mark" aria-hidden="true">ح</span>
+    <span><b>حروفي</b><small>Huroofi · تطبيق تعليمي للأطفال من 3 إلى 6 سنوات</small></span>
+  </header>
+
+  <div class="card" id="support" dir="rtl" lang="ar">
+    <h2>الدعم والتواصل · Support</h2>
+    <p>لأي سؤال أو مشكلة في التطبيق، راسلنا على البريد التالي ونرد عليك في أقرب وقت.</p>
+    <p class="en" dir="ltr" lang="en">For any question or problem with the app, email us and we will reply as soon as we can.</p>
+    <div class="mail">
+      <code id="email">razanqadada1@gmail.com</code>
+      <button type="button" id="copyBtn">نسخ البريد · Copy</button>
+    </div>
+  </div>
+
+  <section id="privacy" dir="rtl" lang="ar">
+    <h1>سياسة الخصوصية</h1>
+    <p>حروفي تطبيق تعليمي للأطفال من 3 إلى 6 سنوات ولأهلهم.</p>
+    <p><b>لا نجمع أي معلومات شخصية.</b> لا توجد حسابات ولا تسجيل ولا إعلانات ولا أدوات تحليل ولا جهات خارجية لتتبع الاستخدام.</p>
+    <ul>
+      <li>يُحفظ تقدم الدروس والنجوم واللغة المختارة على جهازك فقط. حذف التطبيق يحذفها.</li>
+      <li>الصوت يأتي من خاصية النطق المدمجة في الجهاز.</li>
+      <li>التطبيق لا يستخدم الميكروفون ولا الكاميرا، والرسم بالإصبع لا يُحفظ ولا يُرسل.</li>
+      <li>لا يحتوي التطبيق على روابط لمواقع أخرى ولا على وسيلة للتواصل مع مستخدمين آخرين.</li>
+    </ul>
+    <p>للتواصل: razanqadada1@gmail.com</p>
+    <p class="muted">إذا تغيّرت هذه السياسة سنحدّثها هنا.</p>
+  </section>
+
+  <hr>
+
+  <section id="privacy-en" dir="ltr" lang="en">
+    <h1>Privacy Policy</h1>
+    <p>Huroofi is a learning app for children aged 3 to 6 and their parents.</p>
+    <p><b>We do not collect any personal information.</b> There are no accounts, no sign-up, no ads, no analytics and no third parties tracking use.</p>
+    <ul>
+      <li>Lesson progress, stars and the chosen language are stored on your device only. Deleting the app deletes them.</li>
+      <li>Speech comes from the device's built-in text-to-speech.</li>
+      <li>The app does not use the microphone or the camera, and finger tracing is never saved or sent.</li>
+      <li>The app contains no links to other websites and no way to contact other users.</li>
+    </ul>
+    <p>Contact: razanqadada1@gmail.com</p>
+    <p class="muted">If this policy changes, we will update it here.</p>
+  </section>
+</main>
+
+<script>
+document.getElementById("copyBtn").addEventListener("click", function () {
+  var btn = this, text = document.getElementById("email").textContent;
+  function done() { btn.textContent = "تم النسخ · Copied"; }
+  function fallback() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById("email"));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  try {
+    navigator.clipboard.writeText(text).then(done, fallback);
+  } catch (e) { fallback(); }
+});
+</script>
+</body>
+</html>
